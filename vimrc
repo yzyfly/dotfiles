@@ -49,6 +49,9 @@ set autoread
 "
 " Nerdtree
 "
+"  1.Ctrl+w+w：将光标从目录窗口和编辑窗口互相切换；
+"  2.
+"
 " F3打开目录树
 nmap <silent> <F3> :NERDTreeToggle<CR>
 " 不显示的文件
