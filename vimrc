@@ -13,6 +13,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " Nerdtree[https://github.com/scrooloose/nerdtree]
 Plugin 'scrooloose/nerdtree'
+" indentLine[https://github.com/Yggdroot/indentLine]
+Plugin 'Yggdroot/indentLine'
+" tern_for_vim[https://github.com/ternjs/tern_for_vim]
+Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,6 +44,10 @@ set ruler
 set smartindent
 " 依据上面的对齐格式，智能的选择对齐方式
 set autoindent
+" TAB键对应的空格数
+set tabstop=4
+" 每一级锁进长度
+set shiftwidth=4 
 " 当vim进行编辑时，如果命令错误，会发出一个响声，该设置去掉响声
 set vb t_vb=
 " 文件修改之后自动载入
@@ -60,3 +68,10 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 autocmd vimenter * NERDTree
 " 退出最后一个buff时也退出nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" intendLine
+" 
+" 设置颜色
+let g:indentLine_color_term = 255
+" 设置字符
+let g:indentLine_char = '¦'
