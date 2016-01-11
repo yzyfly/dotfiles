@@ -15,8 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 " indentLine[https://github.com/Yggdroot/indentLine]
 Plugin 'Yggdroot/indentLine'
-" tern_for_vim[https://github.com/ternjs/tern_for_vim]
-Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
