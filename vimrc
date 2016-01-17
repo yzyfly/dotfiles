@@ -50,6 +50,8 @@ set shiftwidth=4
 set vb t_vb=
 " 文件修改之后自动载入
 set autoread
+" 关闭响铃
+set vb t_vb=
 
 " 插件设置
 "
